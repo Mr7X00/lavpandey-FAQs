@@ -171,6 +171,45 @@ window.addEventListener('load', () => {
     }
 });
 
+// ── Mobile 8 GIFs Rotating Showcase (4-4 changing automatically) ──
+const allGifsList = [
+    "https://i.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif",
+    "https://i.giphy.com/media/AW6eOaOemvDv1FBpZ6/giphy.gif",
+    "https://i.giphy.com/media/zOvBKUUEERdNm/giphy.gif",
+    "https://i.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif",
+    "https://i.giphy.com/media/y5OffROvBod0s/giphy.gif",
+    "https://i.giphy.com/media/rhZr8u3cvxe0ksf1ej/giphy.gif",
+    "https://i.giphy.com/media/toXKzaJP3WIgM/giphy.gif",
+    "https://i.giphy.com/media/7srpeY4TZMrO8/giphy.gif"
+];
+
+let currentBatch = 0; // 0 = first 4 gifs, 1 = next 4 gifs
+
+function renderMobileGifs() {
+    const container = document.getElementById('mobileGifRow');
+    if (!container) return;
+
+    const start = currentBatch * 4;
+    const batch = allGifsList.slice(start, start + 4);
+
+    container.style.opacity = '0';
+    setTimeout(() => {
+        container.innerHTML = batch.map(url => `
+            <div class="mobile-gif-item">
+                <img src="${url}" alt="Dev vibe" loading="lazy">
+            </div>
+        `).join('');
+        container.style.opacity = '1';
+    }, 300);
+
+    // Toggle between first 4 and second 4
+    currentBatch = currentBatch === 0 ? 1 : 0;
+}
+
+// Rotate every 3.5 seconds
+renderMobileGifs();
+setInterval(renderMobileGifs, 3500);
+
 // ── Init ──
 buildAccordion();
 filterFAQs('all');
