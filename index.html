@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lav Pandey — FAQs</title>
+
+    <!-- Favicon (Funny / Cool Emoji Icon) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236c5ce7'/%3E%3Cstop offset='100%25' stop-color='%23fd79a8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='48' fill='url(%23g)'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' dominant-baseline='central'%3E🤪%3C/text%3E%3C/svg%3E">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Autour+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ 2-SEC LOADING SCREEN (ONLY GIF) ============ -->
+    <div id="loader-wrapper" class="loader-overlay">
+        <div class="loader-gif-wrapper">
+            <img src="https://media.giphy.com/media/l0He4fJxPCbfqv7Xi/giphy.gif" alt="Loading..." class="loader-gif">
+        </div>
+    </div>
+
+    <!-- ============ HERO / HEADING ============ -->
+    <header class="hero-section text-center">
+        <div class="animated-bg"></div>
+        <div class="container position-relative">
+            <h1 class="hero-name">Lav Pandey</h1>
+            <p class="hero-tagline">Get to know me — one question at a time ✨</p>
+        </div>
+    </header>
+
+    <!-- ============ CATEGORY FILTER BAR ============ -->
+    <section class="filter-bar-section sticky-top">
+        <div class="container">
+            <div class="filter-scroll-wrapper" id="filterWrapper">
+                <button class="filter-btn active" data-category="all">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+                    </svg>
+                    All
+                </button>
+                <button class="filter-btn" data-category="personal">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                    Personal
+                </button>
+                <button class="filter-btn" data-category="education">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.786-.314a.5.5 0 0 0 .025-.917l-7.5-3.5zM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46z"/>
+                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.566 4.176 9.032z"/>
+                    </svg>
+                    Education
+                </button>
+                <button class="filter-btn" data-category="tech">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    </svg>
+                    Tech & Skills
+                </button>
+                <button class="filter-btn" data-category="career">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                    </svg>
+                    Career
+                </button>
+                <button class="filter-btn" data-category="hobbies">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM2.98 2.072A1.5 1.5 0 0 0 1.5 3.5v9a1.5 1.5 0 0 0 2.213 1.317l2.846-1.581a.5.5 0 0 1 .241-.061h2.8a.5.5 0 0 1 .241.061l2.846 1.581A1.5 1.5 0 0 0 14.5 12.5v-9a1.5 1.5 0 0 0-1.48-1.428l-10.04.004zM2.5 3.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.738.439l-2.846-1.581A1.5 1.5 0 0 0 9.659 11.3h-2.8a1.5 1.5 0 0 0-.757.202L3.256 13.08A.5.5 0 0 1 2.5 12.5v-9zM4.5 5.5a.5.5 0 0 1 .5.5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                    Hobbies
+                </button>
+                <button class="filter-btn" data-category="goals">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M6.111 2.732h.002a28.618 28.618 0 0 1 2.274-1.33.5.5 0 0 1 .71.399l.067 1.512a29.176 29.176 0 0 1 2.766-.677.5.5 0 0 1 .58.53l-.224 2.825a29.123 29.123 0 0 1 1.708 2.247.5.5 0 0 1-.184.723l-1.393.805a28.91 28.91 0 0 1 .51 2.808.5.5 0 0 1-.502.58l-2.825-.224a29.176 29.176 0 0 1-2.247 1.708.5.5 0 0 1-.723-.184l-.805-1.393a28.91 28.91 0 0 1-2.808.51.5.5 0 0 1-.58-.502l.224-2.825a29.123 29.123 0 0 1-1.708-2.247.5.5 0 0 1 .184-.723l1.393-.805a28.91 28.91 0 0 1-.51-2.808.5.5 0 0 1 .502-.58l2.825.224a29.176 29.176 0 0 1 2.247-1.708.5.5 0 0 1 .723.184l.805 1.393zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                    </svg>
+                    Goals
+                </button>
+                <button class="filter-btn" data-category="fun">
+                    <svg class="filter-svg" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                    </svg>
+                    Fun Facts
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ COUNT BADGE ============ -->
+    <section class="container mt-4 mb-2 text-center">
+        <span class="faq-count-badge" id="faqCountBadge">Showing 50 of 50 FAQs</span>
+    </section>
+
+    <!-- ============ FAQ MAIN CONTENT WITH SIDEBAR GIFS ============ -->
+    <section class="faq-section">
+        <div class="faq-layout-container">
+            <!-- Left Side GIFs (4 GIFs) -->
+            <aside class="side-avatar-column left-avatars">
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat typing" class="avatar-gif">
+                </div>
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/AW6eOaOemvDv1FBpZ6/giphy.gif" alt="Cat rapid typing" class="avatar-gif">
+                </div>
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/zOvBKUUEERdNm/giphy.gif" alt="Coding focus" class="avatar-gif">
+                </div>
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="Kitten computer" class="avatar-gif">
+                </div>
+            </aside>
+
+            <!-- Center Accordion -->
+            <main class="faq-center-content">
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQs are injected by JavaScript -->
+                </div>
+            </main>
+
+            <!-- Right Side GIFs (4 GIFs) -->
+            <aside class="side-avatar-column right-avatars">
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/y5OffROvBod0s/giphy.gif" alt="Work hustle" class="avatar-gif">
+                </div>
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/rhZr8u3cvxe0ksf1ej/giphy.gif" alt="Tech setup" class="avatar-gif">
+                </div>
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/toXKzaJP3WIgM/giphy.gif" alt="Typing speed" class="avatar-gif">
+                </div>
+                <div class="avatar-card">
+                    <img src="https://media.giphy.com/media/7srpeY4TZMrO8/giphy.gif" alt="Grooving" class="avatar-gif">
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer text-center">
+        <div class="container">
+            <p class="mb-1">Made with <span class="heart">❤️</span> by <strong>Lav Pandey</strong></p>
+            <p class="mb-0 small opacity-75">&copy; 2026 — All things Lav.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
